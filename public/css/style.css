@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebc927;
+    justify-content: center;
+}
+.cabezera1{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    height: 40px;
+}
+
+.buscar-lupa{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.logo{
+    width:  40vw;
+}
+
+.buscador{
+    background-color: #ffff;
+    width: 38vw;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: 0px;
+    padding: 5px;
+}
+
+.btn-buscador{
+    width: 30px;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-radius: 0 3px 3px 0;
+    background-color: #ffff;
+    margin-right: 40px;
+}
+
+.btn-buscador:hover{
+    cursor: pointer;
+    background-color: rgba(204, 204, 204, 0.9);
+}
+#h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100vw;
+}
+
+#h2 .fa-solid{
+    margin-right: 3px;
+}
+
+.cabezera2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu{
+    width: 30px;
+    margin: 10px;
+    width: 40px;
+    padding: 5px;
+    background-color: #03264b;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+}
+.menu:hover{
+    background-color: #03264b67;
+}
+.menu:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    
+}
+.anuncio{
+    height: 120px;
+}
+.produtos-visitados{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+}
+.produto1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.produto1:hover{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+}
+.titulo-anuncio{
+    text-align: center;
+    margin: 20px;
+    color: #666666;
+    font-size: 30px;
+}
+
+.img-pro{
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+    
+}
+.img-pro:hover{
+    cursor: pointer;
+}
+.nombre-producto{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 1px;
+    background-color: #ffff;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    
+}
+
+.fa-truck-fast{
+    position: absolute;
+    color: #3ab54a;
+    font-size: 30px;
+    padding: 8px;
+    border: 1px solid #3ab54a;
+    border-radius: 100%; 
+    top: -20px;
+    right: 23px;
+    background-color: #ffff;
+    
+}
+.nombre-producto:hover{
+    cursor: pointer;
+}
+.descripcion{
+    background-color: #ffff;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    text-align: left;
+}
+.descripcion:hover{
+    cursor: pointer;
+    
+}
+
+#precio{
+    font-size: 20px;
+}
+
+#descuento{
+    font-size: 15px;
+    color: #3bb54a;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+.nuevos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px;
+}
+
+.icon{
+    font-size: 40px;
+    margin: 10px;
+    color: #125ac3;
+}
+
+.titu{
+    color: #666666;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.des{
+    text-align: inherit;
+}
+/*css adaptativo*/
+
+
+
