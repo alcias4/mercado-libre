@@ -270,7 +270,17 @@ footer {
 .des{
     text-align: inherit;
 }
+
+.final{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
 /*css adaptativo*/
+
 
 @media (min-width: 570px){
     .produtos-visitados{
@@ -315,6 +325,19 @@ footer {
     .anuncio{
         height: 200px;
     }
+
+    footer{
+        position: relative;
+        height: 320px;
+    }
+
+    .final{
+        display: initial;
+        position: absolute;
+        bottom: 10px;
+        
+    }
+
 }
 
 
@@ -332,6 +355,20 @@ footer {
     .buscar-lupa{
         justify-content: flex-start;
     }
+
+
+    footer{
+        position: relative;
+        height: 300px;
+    }
+
+    .final{
+        display: initial;
+        position: absolute;
+        bottom: 10px;
+        
+    }
+
 }
 
 
@@ -354,11 +391,26 @@ footer {
     }
 
     .produto1{
-        width: 22%;
+        width: 20%;
     }
     .info{
         width: 22%;
+        border-bottom: 1px solid #ebebeb;
     }
+
+    footer{
+        position: relative;
+        height: 300px;
+    }
+
+    .final{
+        display: initial;
+        position: absolute;
+        bottom: 10px;
+        
+    }
+
+
 
 }
 
