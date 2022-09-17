@@ -92,14 +92,58 @@ header{
     cursor: pointer;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav > ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.primera{
+    text-align: center;
+}
+.texto{
+    display: inline;
+    text-align: center;
+    height: 100%;
+    margin: 10px;
+    transition: all 100ms ease;
+    
+}
+.texto:hover{
+    transform: scale(1.06);
+}
+.texto a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+nav > ul> li > a>i{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.cabecera_remplaz{
+    display: none;
+}
+
 main{
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: #ebebeb;
     
 }
 .anuncio{
     height: 120px;
+    image-rendering: optimizeQuality;
 }
 .produtos-visitados{
     display: flex;
@@ -107,18 +151,20 @@ main{
     width: 100vw;
     text-align: center;
 }
-.produto1{
+.produto1 {
     display: flex;
+    width: 70%;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: all 200ms ease;
 }
 .produto1:hover{
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
-    opacity: 0.8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
 }
 .titulo-anuncio{
     text-align: center;
@@ -194,7 +240,7 @@ main{
     margin-top: 30px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -206,6 +252,7 @@ footer{
     flex-direction: column;
     text-align: center;
     margin: 15px;
+    
 }
 
 .icon{
@@ -225,5 +272,93 @@ footer{
 }
 /*css adaptativo*/
 
+@media (min-width: 570px){
+    .produtos-visitados{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
 
+    .produto1{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 40%;
+        height: 100%;
+    }
+
+    .nuevos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .anuncio{
+        height: 200px;
+    }
+}
+
+
+
+@media (min-width: 770px){
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .cabezera2{
+        display: none;
+    }
+
+    .cabecera_remplaz{
+        display: initial;
+    }
+    .anuncio{
+        height: 200px;
+    }
+}
+
+
+@media (min-width: 1050px){
+    .produto1{
+        width: 25%;
+    }
+    .anuncio{
+        height: 300px;
+    }
+
+    .buscador{
+        width: 30vw;
+    }
+    .buscar-lupa{
+        justify-content: flex-start;
+    }
+}
+
+
+@media (min-width: 1350px){
+    header{
+        position: relative;
+    }
+    #h2{
+        position: absolute;
+        text-align: right;
+        top: 16px;
+        right: 200px;
+    }
+    .logo{
+        width: 30%;
+    }
+
+    .buscar-lupa{
+        width: 70%;
+    }
+
+    .produto1{
+        width: 22%;
+    }
+    .info{
+        width: 22%;
+    }
+
+}
 
