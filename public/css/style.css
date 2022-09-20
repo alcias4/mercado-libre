@@ -157,14 +157,15 @@ main{
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: all 400ms;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    transition: all 200ms ease;
 }
 .produto1:hover{
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    transform: scale(0.95);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+    
 }
 
 .produto1:hover > .descripcion{
@@ -177,7 +178,9 @@ main{
     font-size: 30px;
 }
 
+
 .img-pro{
+    position: relative;
     margin-bottom: 0px;
     border-radius: 10px 10px 0px 0px;
     height: 300px;
@@ -194,7 +197,7 @@ main{
     background-color: #ffff;
     padding-left: 10px;
     padding-top: 10px;
-
+    font-size: 15px;
     
 }
 
@@ -219,6 +222,7 @@ main{
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
     text-align: left;
+    font-size: 14px;
 }
 .descripcion > label:hover{
     cursor: pointer;
@@ -229,15 +233,19 @@ main{
     
 }
 .produto1:hover > .description{
+    visibility: visible;
+    opacity: 1;
     display: flex;
+    animation-name: apareciendo;
+    animation-duration: 500ms;
 }
 
 #precio{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #descuento{
-    font-size: 15px;
+    font-size: 13px;
     color: #3bb54a;
 }
 
@@ -295,9 +303,25 @@ footer {
     padding: 15px;
     padding-top: 2px;
     text-align: justify;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     border-radius: 0px 0px 10px 10px;
-    
+    font-size: 14px;
+}
+
+
+
+@keyframes apareciendo{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
@@ -400,6 +424,7 @@ footer {
         position: relative;
     }
     #h2{
+        width: 20%;
         position: absolute;
         text-align: right;
         top: 16px;
