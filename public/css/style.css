@@ -20,7 +20,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    margin: 20px;
     height: 40px;
 }
 
@@ -76,7 +76,7 @@ header{
 }
 
 .menu{
-    width: 30px;
+    height: 40px;
     margin: 10px;
     width: 40px;
     padding: 5px;
@@ -85,24 +85,38 @@ header{
     border: none;
     border-radius: 5px;
 }
-.menu:hover{
-    background-color: #03264b67;
+.menu:hover {
+    transform: scale(1.1);
 }
 .menu:hover{
     cursor: pointer;
 }
 
+
+.fa-bars{
+    font-size: 30px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    margin: 20px;
+    margin-bottom: 0px;
 }
 nav > ul {
     display: flex;
     justify-content: center;
     height: 100%;
     margin-left: 40px;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #fae162;
+    border-radius: 5px;
 }
 
 .primera{
@@ -111,13 +125,9 @@ nav > ul {
 .texto{
     display: inline;
     text-align: center;
-    height: 100%;
-    margin: 10px;
-    transition: all 100ms ease;
-    
-}
-.texto:hover{
-    transform: scale(1.06);
+    height: 50px;
+    padding: 10px;
+    padding-top: 15px;
 }
 .texto a{
     color: black;
