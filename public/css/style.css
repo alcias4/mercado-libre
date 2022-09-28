@@ -16,11 +16,11 @@ header{
     justify-content: center;
 }
 .cabezera1{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    margin-top: 20px;
     height: 40px;
 }
 
@@ -35,6 +35,11 @@ header{
     width:  40vw;
 }
 
+.logo > img {
+    width: 100%;
+    height: 100%;
+}
+
 .buscador{
     background-color: #ffff;
     width: 38vw;
@@ -42,6 +47,7 @@ header{
     border-radius: 3px 0 0 3px;
     outline: 0px;
     padding: 5px;
+    padding-left: 10px;
 }
 
 .btn-buscador{
@@ -59,10 +65,10 @@ header{
 }
 #h2{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 14px;
-    width: 100vw;
+    width: 100%;
 }
 
 #h2 .fa-solid{
@@ -158,25 +164,46 @@ main{
 .produtos-visitados{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    text-align: center;
+    width: 100%;
+    
 }
 .produto1 {
     display: flex;
-    width: 70%;
+    width: 75%;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 15px;
     border-radius: 15px;
-    transition: all 200ms ease;
+    transition: all 300ms;
 }
 .produto1:hover{
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.05);
     
 }
+
+.produto1:hover > .nombre-producto >   .fa-truck-fast{
+    animation-name: rotacion;
+    animation-duration: 500ms;
+}
+
+@keyframes rotacion{
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    70%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 .produto1:hover > .descripcion{
     border-radius: 0px;
@@ -467,7 +494,9 @@ footer {
         bottom: 10px;
         
     }
-
+    .btn-buscador{
+        width: 50px;
+    }
 
 
 }
